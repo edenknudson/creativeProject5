@@ -5,9 +5,8 @@ module.exports = {
   development: {
     client: 'mariasql',
     connection: {
-      host     : '127.0.0.1',
+      unixSocket : '/var/run/mysqld/mysqld.sock',
       user     : 'root',
-      password : '',
       db : 'creative5',
       charset  : 'utf8'
     }
